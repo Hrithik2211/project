@@ -1,0 +1,45 @@
+/* these are element selector */
+p{
+    color: chartreuse;
+}
+a{
+    color: chartreuse;
+}
+/* a,p{
+    color green} these are also accepted */
+    li{
+        list-style-type: lower-roman;
+    }
+/* class selector */
+    .bakery{
+        color: chocolate;
+        padding: 20px;
+        font-weight: bold;
+    }
+    span.bakery,li.bakery{
+        color: chocolate;
+        font-weight: bold;
+    }
+    /* combinator selectors */
+    /* descendant selector */
+    li em{
+        color: rebeccapurple;
+    }
+    /* adjacent selectors */
+    h1+p{
+        color: teal;
+    }
+    /* pseudo class selectors */
+    a:hover{
+        font-weight: bolder;
+        color: violet;
+    }
+
+    body h1+p .bakery{
+        background-color: black;
+        padding: 5px;
+    }
+    span:hover{
+        color: blue;
+        font font-weight: bold;
+    }

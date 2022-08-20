@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <!-- internal css block -->
+    <style>
+        body{
+            background-image: url("images/pat.jpg");
+            background-repeat: no-repeat;
+            background-size: 1540px;
+            
+        }
+        body{
+            background-image: url(/images/pat.jpg);
+            background-size: 1600px;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(30px);
+            
+        }
+
+        h2{
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(110, 110, 110);
+        }   
+        p{
+            font-weight: bolder;
+            font-display: none;
+            text-transform: uppercase; 
+            font-family: 'Rubik Beastly', cursive;
+            
+
+        }
+        div:hover{
+            color: blue;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <!-- using inline css -->
+    <h1 style="background-color: rgba(0, 144, 254, 0.225);">Basic payment form</h1>
+    <h2 style="text-align: center;">Contact information</h2>
+    <p>Name:<input type="text"></p>
+    <!-- contact block -->
+    <fieldset>
+        <legend>Gender</legend>
+        <!-- LEGEND COMBINES THE BLOCK -->
+    <p>
+        male:*<input type="radio" name="sex" id="type" required>
+        <!-- HERE ALWAYS USE SAME NAME IN RADIO ATTRIBUTE TO MAKE SELECTION UNIQUE -->
+        female:*<input type="radio" name="sex" id="type" required>
+    </p>
+</fieldset>
+<p>Address: <textarea name="address" id="address" cols="30" rows="8"></textarea></p> <br>
+<p>Email: <input type="email" name="email" id="email"></p> <br>
+<p>Pincode: <input type="number" name="pin" id="pin"></p> <br>
+<!-- payment block -->
+<fieldset>
+    <legend>
+<h2>Payment information</h2></legend>
+    <p>Card type:  
+        <select name="card type" id="card type" required>
+        <option value="">--select a card type--</option>
+        <option value="visa">visa</option>
+        <option value="master card">master card</option>
+        <option value="maestro">maestro</option>
+        <option value="rupay">rupay</option>
+    </select>
+    </p>
+</fieldset>
+<p>
+    Card number: <input type="number" name="card number" id="card number">
+</p>
+<p>
+    Expiration date: <input type="date" name="valid upto" id="valid upto"> 
+    <br>
+    CVV: <input type="password" name="cvv" id="cvv"> <br>
+    <div>
+    <input type="submit" value="pay now">
+</div>
+</p>
+<span>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero culpa repudiandae alias autem sequi doloribus amet aliquam velit quo, labore quae officia. Vitae soluta deleniti suscipit iure atque culpa exercitationem accusamus quia? Quidem voluptatum praesentium dolorum, illo aperiam, voluptatibus consequatur minima ad sit consectetur soluta dolor quisquam. Sint, expedita animi.
+    😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀
+</span>
+</form>
+</body>
+</html>
